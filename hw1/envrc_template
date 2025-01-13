@@ -1,0 +1,7 @@
+export PSQL_DB_URL=postgresql://postgres:password@localhost:9432/postgres?sslmode=disable
+
+# wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-10.csv.gz
+export TAXI_TRIPS="/absolute/path/to/green_tripdata_2019-10.csv.gz"
+
+# wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_zone_lookup.csv 
+export TAXI_ZONES="/absolute/path/to/taxi_zone_lookup.csv"
