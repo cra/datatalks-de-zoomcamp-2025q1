@@ -4,7 +4,10 @@
 
 ## Note on Q3: distance binning
 
-The question asks for filtering so only Oct trips are used, but all multiple choice answers (except one) give too high value of rows (total sum).
+The question sounds ill-formed.
+
+<details>
+<summary>md5sum, counts, questions and options</summary>
 
 ![q3 screenhsot](../media/hw1_q3_inconsistency.png)
 
@@ -16,6 +19,7 @@ The question asks for filtering so only Oct trips are used, but all multiple cho
 ```
 
 Furthermore, there are 2 routes with negative length, that _technically_ also fall under "up to 1 mile".
+Further probing yields that we don't need to drop invalid entries.
 
 Trips happened before or after 'October 2019':
 
@@ -32,8 +36,8 @@ Trips happened before or after 'October 2019':
       1 2019-11-13
       1 lpep_pickup_datetime
 ```
+</details>
 
-One of the answers matches if you drop the date range filtering. That would be also the only option that sums up to the total number of rows in the dataset. Every other option sums to a value that is higher than the total number of rows.
 
 ## Note on Q4: longest trip
 
