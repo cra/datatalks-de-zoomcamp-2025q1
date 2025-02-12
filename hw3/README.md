@@ -6,6 +6,8 @@ eller, _BQ partitioning and clustering_
 
 **NB**, partitioned is a terrible word for my dislexia, so I tend to make it "partitoned" or "partoned". That was a source of a lot of issues
 
+**don't forget to run terraform destroy**
+
 ## sketchy walkthrough
 
 A lot of tasks require you to use UI to look for some of the tips on some params, _but_
