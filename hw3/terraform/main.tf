@@ -47,8 +47,9 @@ resource "google_bigquery_dataset" "hw3-bq-dataset" {
 }
 
 resource "google_bigquery_table" "ext_yellow_tripdata" {
-  dataset_id = google_bigquery_dataset.hw3-bq-dataset.dataset_id
-  table_id   = "ext_yellow_tripdata"
+  dataset_id          = google_bigquery_dataset.hw3-bq-dataset.dataset_id
+  table_id            = "ext_yellow_tripdata"
+  deletion_protection = false
 
   external_data_configuration {
     autodetect    = true
