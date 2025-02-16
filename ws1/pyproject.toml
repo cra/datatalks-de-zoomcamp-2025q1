@@ -1,0 +1,12 @@
+[project]
+name = "ws1"
+version = "0.1.0"
+description = "Ingestion iwth dlt"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dlt[duckdb]>=1.6.1",
+    "ipython>=8.32.0",
+    "numpy>=2.2.3",
+    "rich>=13.9.4",
+]
