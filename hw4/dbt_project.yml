@@ -1,0 +1,20 @@
+name: 'taxitrips'
+version: '1.0.0'
+profile: 'taxitrips'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  taxitrips:
+
+vars:
+  payment_type_values: [1, 2, 3, 4, 5, 6]

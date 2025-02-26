@@ -1,0 +1,5 @@
+.envrc
+*tfstate*
+.terraform*
+*.json
+*.csv*

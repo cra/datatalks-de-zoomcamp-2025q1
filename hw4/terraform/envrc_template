@@ -1,0 +1,6 @@
+export GOOGLE_PROJECT=en-------------------8
+export GCP_SA_ACCOUNT=ter-------------------------5
+export GCP_SA_EMAIL=${GCP_SA_ACCOUNT}@${GOOGLE_PROJECT}.iam.gserviceaccount.com
+
+export TF_VAR_gcp_project=${GOOGLE_PROJECT}
+export TF_VAR_gcp_credentials_path=$(pwd)/creds.json
